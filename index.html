@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Temperature Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(255, 255, 255);
+        color: #333;
+      }
+      .hero {
+        position: relative;
+        border: 0.3rem solid black;
+        border-radius: 4rem;
+        height: 25rem;
+        background: aqua;
+        margin-right: 24rem;
+        margin-left: 24rem;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+      }
+      h1 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 58vh;
+        flex-direction: column;
+      }
+
+      .input-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+      }
+
+      label {
+        margin-right: 0.5rem;
+      }
+
+      input {
+        padding: 0.8rem 2rem;
+        border-radius: 0.25rem;
+        border: solid rgb(166, 10, 10);
+        font-size: 2rem;
+        text-align: center;
+        width: 6rem;
+      }
+
+      .result-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+      }
+
+      .result {
+        font-size: 2rem;
+        margin: 0;
+      }
+      .input-section h2 {
+        font-size: 30px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <img src="pngegg.png" alt="" />
+    <h3>Please Enter the Temperature you'd like to convert</h3>
+    <div class="hero">
+      <div class="container">
+        <div class="input-section">
+          <h2 for="celsius-input">Celsius:</h2>
+          <input type="number" id="celsius-input" />
+        </div>
+        <div class="result-section">
+          <span class="result" id="celsius-to-fahrenheit"></span>
+          <span>&nbsp;=&nbsp;</span>
+          <span class="result" id="fahrenheit-to-celsius"></span>
+        </div>
+        <div class="input-section">
+          <h2 for="fahrenheit-input">Fahrenheit:</h2>
+          <input type="number" id="fahrenheit-input" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
